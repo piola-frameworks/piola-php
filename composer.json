@@ -1,0 +1,15 @@
+{
+    "name": "piola/miali",
+    "description": "Description of project miali.",
+    "authors": [
+        {
+            "name": "Pablo",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "4.4.2",
+        "phpunit/phpunit-skeleton-generator": "2.0.1",
+        "maximebf/debugbar": "v1.10.2"
+    }
+}
