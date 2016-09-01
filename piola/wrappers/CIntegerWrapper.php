@@ -1,18 +1,15 @@
 <?php
 
-namespace CEIT\core\wrappers
+namespace piola\wrappers;
+
+final class CIntegerWrapper
 {
-    final class CIntegerWrapper
+    private $_value = 0;
+    private $_unsigned = false;
+
+    public function __construct(int $value = 0, boolean $unsigned = false)
     {
-        private $_value = 0;
-        private $_unsigned = false;
-        
-        public function __construct(int $value = 0, boolean $unsigned = false)
-        {
-            $this->_value = $value;
-            $this->_unsigned = $unsigned;
-        }
+        $this->_value = $value;
+        $this->_unsigned = $unsigned;
     }
 }
-
-?>
