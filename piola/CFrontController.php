@@ -33,9 +33,9 @@ namespace piola
         
         /**
          * 
-         * @param web\Request $request
+         * @param web\CHttpRequest $request
          */
-        public function __construct(web\Request $request)
+        public function __construct(web\CHttpRequest $request)
         {
             $parsedQueryString = array();
             parse_str($request->getQueryString(), $parsedQueryString);

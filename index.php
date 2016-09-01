@@ -21,8 +21,6 @@ if (!defined("APP_DIR"))
 
 require_once FRMK_DIR . '/CAutoLoader.php';
 
-//use DebugBar\StandardDebugBar;
-
 /*set_error_handler(function ($err_severity, $err_msg, $err_file, $err_line, array $err_context)
 {
     if (0 === error_reporting()) { return false; }
@@ -66,16 +64,13 @@ try
     // cargador de clases
     $autloader = new \piola\CAutoLoader();
     
-    /*$debugbar = new StandardDebugBar();
-    $debugbarRenderer = $debugbar->getJavascriptRenderer();*/
-    
     // inicio session
     session_start();
     
     print '<pre>' . htmlspecialchars(print_r($_ENV, true)) . '</pre>';
     
     // coso que maneja para que lado va el programa
-    $request = new \piola\web\Request();
+    $request = new \piola\web\CHttpRequest();
     $front = new \piola\CFrontController($request);
     $front->run();
 }

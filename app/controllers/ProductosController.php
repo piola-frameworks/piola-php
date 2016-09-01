@@ -28,13 +28,13 @@ namespace miali\controller
         
         public function create()
         {
-            $nombre = web\SPost::getValue("txtNombre");
-            $descripcion = web\SPost::getValue("txtDescripcion");
-            $precio = web\SPost::getValue("txtPrecio");
-            $hayStock = web\SPost::getValue("chkHayStock");
-            $largo = web\SPost::getValue("txtLargo");
-            $ancho = web\SPost::getValue("txtAncho");
-            $espesor = web\SPost::getValue("txtEspesor");
+            $nombre = web\CHttpPostMethod::getValue("txtNombre");
+            $descripcion = web\CHttpPostMethod::getValue("txtDescripcion");
+            $precio = web\CHttpPostMethod::getValue("txtPrecio");
+            $hayStock = web\CHttpPostMethod::getValue("chkHayStock");
+            $largo = web\CHttpPostMethod::getValue("txtLargo");
+            $ancho = web\CHttpPostMethod::getValue("txtAncho");
+            $espesor = web\CHttpPostMethod::getValue("txtEspesor");
             
             $entity = new model\ProductoModel(0, $nombre, $descripcion, $precio, $hayStock, $largo, $ancho, $espesor);
             $this->_productosRepository->create($entity);
@@ -59,7 +59,7 @@ namespace miali\controller
 
         public function update($id)
         {
-            $formulario = web\SPost::getValue("frmDatos");
+            $formulario = web\CHttpPostMethod::getValue("frmDatos");
             $identificador = $id;
             $nombre = $formulario[""];
             $descripcion = $formulario[""];
