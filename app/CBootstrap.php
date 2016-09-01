@@ -13,8 +13,10 @@ namespace app;
  *
  * @author Pablo
  */
-class CBootstrap {
-    public function __construct() {
+class CBootstrap 
+{
+    public function __construct() 
+    {
         
     }
 }

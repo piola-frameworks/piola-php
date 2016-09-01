@@ -4,7 +4,7 @@ namespace piola
 {
     final class CFrontController
     {
-        const CTRL_NMSP = "miali\\controller\\";
+        const CTRL_NMSP = "app\\controller\\";
         const CTRL_PREFIX = "Controller";
         
         private $_controller = "Main";
