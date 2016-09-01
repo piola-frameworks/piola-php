@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright 2016 Pablo.
+ * Copyright 2016 pleiros.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,16 @@
  * limitations under the License.
  */
 
-namespace piola\web\http\message\status;
+namespace piola\web\http\message\status\informational;
+
+use piola\web\http\message\status as status;
 
 /**
- * Description of CHttpStatus
+ * Description of CHttpSwitchingControlStatus
  *
- * @author Pablo
+ * @author pleiros
  */
-class CHttpStatus {
+class CHttpSwitchingControlStatus extends status\AHttpStatus
+{
     //put your code here
 }
