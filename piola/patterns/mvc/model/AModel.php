@@ -1,10 +1,10 @@
 <?php
 
-namespace piola\patterns\mvc;
+namespace piola\patterns\mvc\model;
 
 use piola\db as db;
 
-abstract class AModel implements db\ICommands
+abstract class AModel implements IModel, db\ICommands
 {
     protected $_sp = array();
     protected $_params = array();

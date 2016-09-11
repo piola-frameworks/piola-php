@@ -37,8 +37,8 @@ class Routes
     public function __construct()
     {
         $this->setRoutes(array(
-            "_root_" => new piola\Route(new controller\MainController()),
-            "_404_" => new piola\Route(new controller\ErrorController(), "404")
+            "_root_" => new piola\CRoute(new controller\MainController()),
+            "_404_" => new piola\CRoute(new controller\ErrorController(), "404")
         ));
     }
 }
